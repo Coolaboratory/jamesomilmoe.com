@@ -69,6 +69,11 @@
       flex-direction: column;
     }
     ::selection { background: var(--select); }
+    /* No widows: pretty wrapping for running text, balanced wrapping for short lines.
+       The &nbsp; between the last two words of each line is the fallback for
+       browsers without text-wrap support (Firefox). */
+    p { text-wrap: pretty; }
+    h1, h2, .dates { text-wrap: balance; }
     a {
       color: inherit;
       text-decoration-line: underline;
@@ -157,8 +162,8 @@
   <main id="main">
     <div class="wrap">
       <header>
-        <h1>James O. Milmoe</h1>
-        <p class="dates">Photographer, 1927 to 2022</p>
+        <h1>James O.&nbsp;Milmoe</h1>
+        <p class="dates">Photographer, 1927 to&nbsp;2022</p>
       </header>
 
       <figure>
@@ -173,28 +178,28 @@
 
       <section class="bio" aria-label="Biography">
         <!-- Both paragraphs verbatim from the original jamesomilmoe.com home page (source-archive/.../index.html). -->
-        <p data-copy="bio-1">James O. Milmoe was a distinguished photographic artist whose work is represented in numerous museum, private, and corporate collections. He was also internationally recognized for his exceptional photography of fine art, including paintings and sculpture.</p>
-        <p data-copy="bio-2">A renowned and internationally recognized photographer died peacefully in his home on Dec. 27, 2022. He was 95. Jim's photographs have appeared in nearly 500 publications and reside in the permanent collections of Carnegie, Chicago, New York MOMA and Denver museums. He taught photography at DU, CU and UC Berkeley. His celebrated career culminated in 2022 with the publication of <em>The Art of Grave Markers</em>, and an exhibit at the Cactus Club in Denver. Born in Pittsburgh, Jim is predeceased by his wife of 62 years, Marilynn, a writer who shared his love of art and photography. He is survived by five children, twelve grandchildren, and four great grandchildren.</p>
+        <p data-copy="bio-1">James O. Milmoe was a distinguished photographic artist whose work is represented in numerous museum, private, and corporate collections. He was also internationally recognized for his exceptional photography of fine art, including paintings and&nbsp;sculpture.</p>
+        <p data-copy="bio-2">A renowned and internationally recognized photographer died peacefully in his home on Dec. 27, 2022. He was 95. Jim's photographs have appeared in nearly 500 publications and reside in the permanent collections of Carnegie, Chicago, New York MOMA and Denver museums. He taught photography at DU, CU and UC Berkeley. His celebrated career culminated in 2022 with the publication of <em>The Art of Grave Markers</em>, and an exhibit at the Cactus Club in Denver. Born in Pittsburgh, Jim is predeceased by his wife of 62 years, Marilynn, a writer who shared his love of art and photography. He is survived by five children, twelve grandchildren, and four great&nbsp;grandchildren.</p>
         <!-- Source line verbatim from the original home page. -->
-        <p class="source">Published by Denver Post on January 8th, 2023. (Edited)</p>
+        <p class="source">Published by Denver Post on January 8th, 2023.&nbsp;(Edited)</p>
       </section>
 
       <section class="notice" aria-labelledby="relaunch-h">
         <h2 id="relaunch-h">Relaunch</h2>
-        <p data-copy="relaunch">A new jamesomilmoe.com is in progress.</p>
+        <p data-copy="relaunch">A new jamesomilmoe.com is in&nbsp;progress.</p>
       </section>
 
       <section class="notice" aria-labelledby="contact-h">
         <h2 id="contact-h">Contact</h2>
         <!-- The address is assembled by the script at the end of the page. It never appears in this file. -->
-        <p data-copy="contact">For prints, the book or questions about the archive, write to <span data-email><noscript><span class="email-fallback">the email address shown when JavaScript is enabled</span></noscript></span>.</p>
+        <p data-copy="contact">For prints, the book or questions about the archive, write to&nbsp;<span data-email><noscript><span class="email-fallback">the email address shown when JavaScript is enabled</span></noscript></span>.</p>
       </section>
     </div>
   </main>
 
   <footer>
     <div class="wrap">
-      <p>Photographs by James O. Milmoe (1927 to 2022) © Milmoe Art Collection. All rights reserved.</p>
+      <p>Photographs by James O. Milmoe (1927 to 2022) © Milmoe Art Collection. All rights&nbsp;reserved.</p>
     </div>
   </footer>
 
