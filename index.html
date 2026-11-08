@@ -8,7 +8,7 @@
   <meta name="description" content="James O. Milmoe was a distinguished photographic artist whose work is represented in numerous museum, private, and corporate collections. He was also internationally recognized for his exceptional photography of fine art, including paintings and sculpture.">
   <link rel="canonical" href="https://jamesomilmoe.com/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#ebebeb">
+  <meta name="theme-color" content="#e2e2e2">
   <meta name="color-scheme" content="light">
 
   <meta property="og:type" content="website">
@@ -35,14 +35,16 @@
   </script>
 
   <style>
-    /* Neutral grays. WCAG contrast noted against --paper (and --paper-deep, the footer). */
+    /* Neutral grays. --paper is the page, --paper-deep the footer (and the image
+       placeholder); the footer is the lighter of the two. WCAG contrast noted
+       against --paper (and --paper-deep). */
     :root {
-      --paper: #ebebeb;
-      --paper-deep: #e2e2e2;
-      --ink: #1a1a1a;     /* 14.6:1 (13.4:1 on paper-deep) */
-      --muted: #555555;   /* 6.3:1 (5.8:1 on paper-deep) */
+      --paper: #e2e2e2;
+      --paper-deep: #ebebeb;
+      --ink: #1a1a1a;     /* 13.4:1 (14.6:1 on paper-deep) */
+      --muted: #555555;   /* 5.8:1 (6.3:1 on paper-deep) */
       --rule: #c9c9c9;    /* decorative only */
-      --select: #d0d0d0;
+      --select: #cccccc;  /* selected text: ink 10.84:1, muted 4.64:1 */
       --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
       color-scheme: light; /* light only, by Andrew's choice: no dark mode */
     }
