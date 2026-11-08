@@ -8,9 +8,8 @@
   <meta name="description" content="James O. Milmoe was a distinguished photographic artist whose work is represented in numerous museum, private, and corporate collections. He was also internationally recognized for his exceptional photography of fine art, including paintings and sculpture.">
   <link rel="canonical" href="https://jamesomilmoe.com/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#ebebeb" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1c1c1c" media="(prefers-color-scheme: dark)">
-  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ebebeb">
+  <meta name="color-scheme" content="light">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="James O. Milmoe">
@@ -45,16 +44,7 @@
       --rule: #c9c9c9;    /* decorative only */
       --select: #d0d0d0;
       --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --paper: #1c1c1c;
-        --paper-deep: #232323;
-        --ink: #e8e8e8;     /* 13.9:1 (12.8:1 on paper-deep) */
-        --muted: #a3a3a3;   /* 6.8:1 (6.2:1 on paper-deep) */
-        --rule: #3a3a3a;
-        --select: #444444;
-      }
+      color-scheme: light; /* light only, by Andrew's choice: no dark mode */
     }
 
     *, *::before, *::after { box-sizing: border-box; }
