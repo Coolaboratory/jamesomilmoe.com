@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>James O. Milmoe (1927 to 2022), Photographer</title>
-  <!-- Copy: Ruth, copy.md (8 Nov 2026). -->
-  <meta name="description" content="James O. Milmoe (1927 to 2022) was a Colorado photographer of architecture and fine art. A new archive of his work is in progress.">
+  <!-- Description: the intro paragraph from the original jamesomilmoe.com home page, verbatim. -->
+  <meta name="description" content="James O. Milmoe was a distinguished photographic artist whose work is represented in numerous museum, private, and corporate collections. He was also internationally recognized for his exceptional photography of fine art, including paintings and sculpture.">
   <link rel="canonical" href="https://jamesomilmoe.com/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ebebeb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1c1c" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="James O. Milmoe">
   <meta property="og:title" content="James O. Milmoe (1927 to 2022), Photographer">
-  <meta property="og:description" content="James O. Milmoe (1927 to 2022) was a Colorado photographer of architecture and fine art. A new archive of his work is in progress.">
+  <meta property="og:description" content="James O. Milmoe was a distinguished photographic artist whose work is represented in numerous museum, private, and corporate collections. He was also internationally recognized for his exceptional photography of fine art, including paintings and sculpture.">
   <meta property="og:url" content="https://jamesomilmoe.com/">
-  <meta property="og:image" content="https://jamesomilmoe.com/images/james-o-milmoe-portrait-816.jpg">
-  <meta property="og:image:width" content="816">
-  <meta property="og:image:height" content="800">
-  <meta property="og:image:alt" content="James O. Milmoe as a young man, bearded, in glasses and a checked shirt, holding a camera with a long lens on a tripod.">
+  <meta property="og:image" content="https://jamesomilmoe.com/images/james-o-milmoe-portrait-475.jpg">
+  <meta property="og:image:width" content="475">
+  <meta property="og:image:height" content="710">
+  <meta property="og:image:alt" content="James O. Milmoe in later life, white-haired and in glasses, resting his chin on his hand and smiling.">
   <meta name="twitter:card" content="summary">
 
   <script type="application/ld+json">
@@ -35,46 +35,25 @@
   }
   </script>
 
-  <link rel="preload" href="fonts/source-serif-4.woff2" as="font" type="font/woff2" crossorigin>
   <style>
-    /* Self-hosted, SIL Open Font License (see fonts/). Same faces as the v1 Astro site. */
-    @font-face {
-      font-family: 'Source Serif 4 Variable';
-      src: url('fonts/source-serif-4.woff2') format('woff2-variations');
-      font-weight: 200 900; font-style: normal; font-display: swap;
-    }
-    @font-face {
-      font-family: 'Source Serif 4 Variable';
-      src: url('fonts/source-serif-4-italic.woff2') format('woff2-variations');
-      font-weight: 200 900; font-style: italic; font-display: swap;
-    }
-    @font-face {
-      font-family: 'Public Sans Variable';
-      src: url('fonts/public-sans.woff2') format('woff2-variations');
-      font-weight: 100 900; font-style: normal; font-display: swap;
-    }
-
-    /* "The Monograph" palette from the v1 site. Contrast noted against --paper. */
+    /* Neutral grays. WCAG contrast noted against --paper (and --paper-deep, the footer). */
     :root {
-      --paper: #f7f4ee;
-      --paper-deep: #efeae1;
-      --ink: #1d1b18;     /* 15.6:1 */
-      --muted: #59534b;   /* 6.9:1 */
-      --rule: #d6cec1;    /* decorative only */
-      --accent: #6e3a28;  /* 8.3:1 */
-      --select: #e3d7c3;
-      --serif: 'Source Serif 4 Variable', 'Iowan Old Style', Georgia, serif;
-      --sans: 'Public Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      --paper: #ebebeb;
+      --paper-deep: #e2e2e2;
+      --ink: #1a1a1a;     /* 14.6:1 (13.4:1 on paper-deep) */
+      --muted: #555555;   /* 6.3:1 (5.8:1 on paper-deep) */
+      --rule: #c9c9c9;    /* decorative only */
+      --select: #d0d0d0;
+      --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --paper: #161513;
-        --paper-deep: #1d1b18;
-        --ink: #ece7de;     /* 14.9:1 */
-        --muted: #aaa196;   /* 7.3:1 */
-        --rule: #3a3631;
-        --accent: #e0b49f;  /* 9.4:1 */
-        --select: #4a3f33;
+        --paper: #1c1c1c;
+        --paper-deep: #232323;
+        --ink: #e8e8e8;     /* 13.9:1 (12.8:1 on paper-deep) */
+        --muted: #a3a3a3;   /* 6.8:1 (6.2:1 on paper-deep) */
+        --rule: #3a3a3a;
+        --select: #444444;
       }
     }
 
@@ -82,15 +61,16 @@
     html {
       background: var(--paper);
       color: var(--ink);
-      font-family: var(--serif);
+      font-family: var(--sans);
       -webkit-text-size-adjust: 100%;
-      text-rendering: optimizeLegibility;
     }
     body {
       margin: 0;
       background: var(--paper);
-      font-size: 1.0625rem;
+      font-size: 1rem;
+      font-weight: 400;
       line-height: 1.65;
+      letter-spacing: 0.005em;
       -webkit-font-smoothing: antialiased;
       min-height: 100vh;
       display: flex;
@@ -101,55 +81,48 @@
       color: inherit;
       text-decoration-line: underline;
       text-decoration-thickness: 1px;
-      text-underline-offset: 0.2em;
-      text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+      text-underline-offset: 0.22em;
+      text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
     }
-    a:hover { color: var(--accent); text-decoration-color: currentColor; }
+    a:hover { text-decoration-color: currentColor; }
     :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
 
-    .wrap { width: 100%; max-width: 38rem; margin: 0 auto; padding: 0 1rem; }
+    .wrap { width: 100%; max-width: 36rem; margin: 0 auto; padding: 0 1rem; }
     @media (min-width: 40rem) { .wrap { padding: 0 2rem; } }
 
     main { flex: 1; padding: 4rem 0 5rem; }
     @media (min-width: 40rem) { main { padding: 6rem 0 7rem; } }
 
     h1 {
-      font-weight: 500;
-      font-size: clamp(2.25rem, 7vw, 3.25rem);
+      font-weight: 400;
+      font-size: clamp(2rem, 6.5vw, 2.75rem);
       line-height: 1.1;
-      letter-spacing: -0.015em;
+      letter-spacing: -0.02em;
       margin: 0;
       text-wrap: balance;
     }
     .dates {
-      font-family: var(--sans);
-      font-size: 0.9375rem;
+      font-size: 0.875rem;
       letter-spacing: 0.02em;
       color: var(--muted);
-      margin: 0.6rem 0 0;
+      margin: 0.75rem 0 0;
     }
 
     figure { margin: 3rem 0 0; }
     figure img {
+      /* Never shown larger than the published source (475 x 710), and capped a little
+         lower on wide screens so the tall portrait doesn't dominate the column.
+         Aspect ratio comes from the width/height attributes. */
       display: block;
-      /* Shown at natural size at most, never upscaled. Aspect ratio comes from the
-         width/height attributes, so swapping the photo needs no CSS change. */
       width: auto;
-      max-width: 100%;
+      max-width: min(100%, 22rem);
       height: auto;
       background: var(--paper-deep);
     }
-    figcaption, .meta {
-      font-family: var(--sans);
-      font-size: 0.8125rem;
-      letter-spacing: 0.02em;
-      color: var(--muted);
-    }
-    figcaption { margin-top: 0.75rem; }
 
     .bio { margin-top: 3rem; }
     .bio p { margin: 0; }
-    .bio p + p { margin-top: 1em; }
+    .bio p + p { margin-top: 1.1em; }
 
     .notice {
       margin-top: 3.5rem;
@@ -157,22 +130,25 @@
       border-top: 1px solid var(--rule);
     }
     h2 {
-      font-family: var(--sans);
-      font-size: 0.75rem;
+      font-size: 0.6875rem;
       font-weight: 500;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--muted);
       margin: 0 0 0.75rem;
     }
     .notice p { margin: 0; }
-    .notice p + p { margin-top: 0.75em; }
     .email-fallback { color: var(--muted); font-style: italic; }
     [data-email] a { overflow-wrap: anywhere; }
 
     footer { border-top: 1px solid var(--rule); background: var(--paper-deep); }
     footer .wrap { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-    footer p { margin: 0; }
+    footer p {
+      margin: 0;
+      font-size: 0.75rem;
+      letter-spacing: 0.02em;
+      color: var(--muted);
+    }
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
@@ -188,25 +164,24 @@
       </header>
 
       <figure>
-        <!-- PHOTO (pending Andrew's confirmation). Byte-identical copy of the old site's published
-             file milmoe-50s-promo-1-of-1_orig.jpg, 816 x 800. To swap: drop the new file in images/
-             (only a size the old site already published, 2000px ceiling), then update src, width,
-             height and alt here, and og:image, og:image:width, og:image:height, og:image:alt in <head>.
-             Ruth's alternate: source-archive/.../editor/nds-4592.jpeg (475 x 710), alt "James O. Milmoe
-             in later life, white-haired and in glasses, resting his chin on his hand and smiling."
+        <!-- PHOTO. Byte-identical copy of the old site's published file editor/nds-4592.jpeg, 475 x 710.
+             Never replace with a larger file (only sizes the old site published, 2000px ceiling).
+             To swap: drop the new file in images/, then update src, width, height and alt here,
+             and og:image, og:image:width, og:image:height, og:image:alt in <head>.
              No caption: portrait photographer unknown. If confirmed, add <figcaption>Portrait: [name]</figcaption>. -->
-        <img src="images/james-o-milmoe-portrait-816.jpg" width="816" height="800"
-             alt="James O. Milmoe as a young man, bearded, in glasses and a checked shirt, holding a camera with a long lens on a tripod. A black-and-white film frame.">
+        <img src="images/james-o-milmoe-portrait-475.jpg" width="475" height="710"
+             alt="James O. Milmoe in later life, white-haired and in glasses, resting his chin on his hand and smiling.">
       </figure>
 
       <section class="bio" aria-label="Biography">
-        <p data-copy="bio-1">James O. (Jim) Milmoe was a photographer whose work ranged from architecture to fine art to his own abstract studies of walls and signs. Born in Pittsburgh, he came to Colorado in the 1940s to study at Colorado College and later earned a Master of Fine Arts from the University of Denver. He became internationally respected for photographing paintings and sculpture for art books, museum catalogs and fine art reproductions, and he photographed buildings for architects and corporate clients. His own photographs are held in the permanent collections of the Museum of Modern Art in New York, the Art Institute of Chicago and the Denver Art Museum.</p>
-        <p data-copy="bio-2">He was also a teacher, lecturer and juror. He taught photography at the University of Denver, the University of Colorado and, as a visiting professor, the University of California, Berkeley, and he was a Fellow of the Photographic Society of America. His career culminated in 2022 with <cite>The Art of Grave Markers</cite>, a book of his black-and-white photographs of headstones from around the world, published by the Colorado Photographic Arts Center and still available. He died at home in December 2022, predeceased by his wife, Marilynn, a writer who shared his love of art and photography.</p>
+        <!-- Both paragraphs verbatim from the original jamesomilmoe.com home page (source-archive/.../index.html). -->
+        <p data-copy="bio-1">James O. Milmoe was a distinguished photographic artist whose work is represented in numerous museum, private, and corporate collections. He was also internationally recognized for his exceptional photography of fine art, including paintings and sculpture.</p>
+        <p data-copy="bio-2">A renowned and internationally recognized photographer died peacefully in his home on Dec. 27, 2022. He was 95. Jim's photographs have appeared in nearly 500 publications and reside in the permanent collections of Carnegie, Chicago, New York MOMA and Denver museums. He taught photography at DU, CU and UC Berkeley. His celebrated career culminated in 2022 with the publication of <em>The Art of Grave Markers</em>, and an exhibit at the Cactus Club in Denver. Born in Pittsburgh, Jim is predeceased by his wife of 62 years, Marilynn, a writer who shared his love of art and photography. He is survived by five children, twelve grandchildren, and four great grandchildren.</p>
       </section>
 
       <section class="notice" aria-labelledby="relaunch-h">
-        <h2 id="relaunch-h">Archive</h2>
-        <p data-copy="relaunch">A new jamesomilmoe.com, with a fuller archive of his photographs and his life's work, is in progress.</p>
+        <h2 id="relaunch-h">Relaunch</h2>
+        <p data-copy="relaunch">A new jamesomilmoe.com is in progress.</p>
       </section>
 
       <section class="notice" aria-labelledby="contact-h">
@@ -219,7 +194,7 @@
 
   <footer>
     <div class="wrap">
-      <p class="meta">Photographs by James O. Milmoe (1927 to 2022) © Milmoe Art Collection. All rights reserved.</p>
+      <p>Photographs by James O. Milmoe (1927 to 2022) © Milmoe Art Collection. All rights reserved.</p>
     </div>
   </footer>
 
